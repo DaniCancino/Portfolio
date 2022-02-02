@@ -183,6 +183,14 @@
     width: 10em;
     height: 5em;
     transform: rotate(90deg);
-    margin-left: 20%;
+    margin-left: -12%;
     margin-top: -2%;
+}
+
+.cinta-dos{
+    position: absolute;
+    width: 10em;
+    height: 5em;
+    margin-top: -2%;
+    margin-left: 12.5%;
 }

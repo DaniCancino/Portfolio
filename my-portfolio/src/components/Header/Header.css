@@ -32,7 +32,7 @@
 .Links-header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center; 
     width: 40%;
     height: 100%;
@@ -44,14 +44,16 @@
 .Link{
     text-decoration: none;
     list-style: none;
-    margin-right: 5%;
     color: #fff;
     transition: 0.5s;
+    width: 40%;
+    width: 100%;
+    font-size: 1em;
+    transition: 0.2s;
 }
 
 .Link:hover{
     color: #FFC600;
-    border-bottom: 2px solid #FFC600;
     cursor: pointer;
 }
 

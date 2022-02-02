@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Init.css'
 import fondo from '../../assets/DobleExpo3.png'
 import { AiOutlineCloudDownload } from "react-icons/ai";
