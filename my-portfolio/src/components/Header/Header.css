@@ -1,0 +1,57 @@
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+
+.Logo{
+    width: 350px;
+    height: 200px;
+    margin-left: -6%;
+    animation: rotate 8s infinite;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotateX(0);
+      transform: rotateY(0);
+    }
+   50% {
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);
+      }
+    100% {
+        transform: rotateX(360deg);
+        transform: rotateY(360deg);
+      }
+  }
+
+.Links-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    width: 40%;
+    height: 100%;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 5%;
+}
+
+.Link{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 5%;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.Link:hover{
+    color: #FFC600;
+    border-bottom: 2px solid #FFC600;
+    cursor: pointer;
+}
+
