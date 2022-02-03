@@ -1,10 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './About.css';
 import foto from '../../assets/foto.jpg'
 import cinta from '../../assets/cinta.png'
 import {motion} from 'framer-motion'
-import {useInView} from 'react-intersection-observer'
-import {useAnimation} from 'framer-motion'
 import Typist from 'react-typist';
 
 
@@ -20,7 +18,7 @@ const About = () =>{
         }
       }
 
-
+      const text = '<p>En la fase de maquetación de un documento o una página web o para probar un tipo de letra es necesario visualizar el aspecto del diseño. En este momento se necesita un contenido sobre el que aplicar el formato para obtener esta muestra. Cualquier texto puede utilizarse con este cometido, puesto que lo importante es el aspecto no el significado y será reemplazado en la versión final.</p>'
 
     return(
         <div className='About'>
@@ -48,11 +46,7 @@ const About = () =>{
                     </div>
                     <Typist className='about-description'>
                         <Typist.Delay ms={1000} />
-                        En la fase de maquetación de un documento o una página web o para probar un tipo de 
-                        letra es necesario visualizar el aspecto del diseño. En este momento se necesita 
-                        un contenido sobre el que aplicar el formato para obtener esta muestra. 
-                        Cualquier texto puede utilizarse con este cometido, puesto que lo importante es 
-                        el aspecto no el significado y será reemplazado en la versión final.
+                        {text}
                     </Typist>
                 </motion.div>
                 <motion.div className='marco-exterior'

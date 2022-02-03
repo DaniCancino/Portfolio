@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path='/'>
-          <Header />
-          <Init />
+          <Header scroll='no'/>
+          <Init scroll='no'/>
         </Route>
         <Route exact path='/about'>
           <About /> 
