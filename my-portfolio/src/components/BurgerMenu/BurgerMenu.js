@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom'
 import { FaBars, FaTimes } from "react-icons/fa";
 import './BurgerMenu.css';
-import {motion} from 'framer-motion'
 
 
 const BurgerMenu = () =>{
