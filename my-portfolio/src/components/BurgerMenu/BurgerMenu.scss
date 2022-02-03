@@ -18,8 +18,48 @@
     .bars-menu:hover{
         cursor: pointer;
         color: #FFC600;
+        transform: scale(1.1, 1.3);
+        transition: 0.3s;
+    }
+    .bars-menu:active{
+        color: #FFC600;
+        transform: scale3d(1, 0.2, 1);
+        transition: 0.4s;
     }
 }
+
+@keyframes popup {
+    0%{
+      transform: translateY(-100vh);
+    }
+    10%{
+        transform: translateY(-90vh);
+    }
+    30%{
+        transform: translateY(-80vh);
+    }
+    40%{
+        transform: translateY(-70vh);
+    }
+    50%{
+      transform: translateY(-60vh);
+    }
+    60%{
+      transform: translateY(-50vh);
+    }
+    70%{
+      transform: translateY(-40vh);
+    }
+    80%{
+      transform: translateY(-30vh);
+    }
+    90%{
+      transform: translateY(-15vh);
+    }
+    100%{
+      transform: translateY(0vh);
+    }
+  }
 
 .menu-extended{
     display: flex;
@@ -35,6 +75,7 @@
     height: 100vh;
     background-color: #212121;
     z-index: 100;
+    animation: popup 0.5s;
     .bars-menu{
         display: none;
     }
@@ -49,6 +90,13 @@
     .close-menu:hover{
         cursor: pointer;
         color: #FFC600;
+        transform: scale(1.1, 1.2);
+        transition: 0.3s;
+    }
+    .close-menu:active{
+        color: #FFC600;
+        transform: scale(0.3, 0.3);
+        transition: 0.8s;
     }
     .Links-header{
         display: flex;
@@ -73,6 +121,9 @@
         .Link:hover{
             color: #FFC600;
             cursor: pointer;
+            transform: scale(1.2, 1.2);
+            transition: 0.4s ;
+            
         }
     }
 }
