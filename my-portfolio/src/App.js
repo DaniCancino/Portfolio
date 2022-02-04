@@ -8,10 +8,13 @@ import Skills from './components/Skills/Skills';
 function App() {
   return (
     <div className="App">
+      <Route path='/'>
+          <Header />
+        </Route>
+
       <Switch>
         <Route exact path='/'>
-          <Header scroll='no'/>
-          <Init scroll='no'/>
+          <Init />
         </Route>
         <Route exact path='/about'>
           <About /> 

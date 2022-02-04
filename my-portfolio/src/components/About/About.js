@@ -4,6 +4,8 @@ import foto from '../../assets/foto.jpg'
 import cinta from '../../assets/cinta.png'
 import {motion} from 'framer-motion'
 import Typist from 'react-typist';
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import {Link} from 'react-router-dom';
 
 
 const About = () =>{
@@ -28,7 +30,7 @@ const About = () =>{
                 transition={{type: 'Spring', duration: 0.8, bounce: 1, stiffness: 50 }}
                 className='about-title'
             > 
-                ACERCA DE MI
+                {'<h3>ACERCA DE MI</h3>'}
             </motion.h3>
 
             <div className='container-code'>
@@ -61,6 +63,16 @@ const About = () =>{
                     </div>
                 </motion.div>
             </div>
+
+            <motion.div
+                    variants={container}
+                    initial="hidden"
+                    animate="show"
+                >
+                    <Link to='/'><FaAngleLeft className= 'left-arrow'/></Link>
+                    <Link to='/skills'><FaAngleRight className= 'right-arrow'/></Link>
+            </motion.div>
+            
         </div>
     )
 }

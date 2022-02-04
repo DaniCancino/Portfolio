@@ -4,6 +4,8 @@ import fondo from '../../assets/DobleExpo3.png'
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Typist from 'react-typist';
 import {motion} from 'framer-motion'
+import { FaAngleRight } from "react-icons/fa";
+import {Link} from 'react-router-dom';
 
 const container = {
     hidden: { opacity: 0 },
@@ -57,6 +59,14 @@ const Init = () =>{
                 <AiOutlineCloudDownload />
                 Descargar CV
             </motion.a>
+            
+            <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            >
+             <Link to='/about'><FaAngleRight className= 'right-arrow'/></Link>
+            </motion.div>
         </div>
     )
 }

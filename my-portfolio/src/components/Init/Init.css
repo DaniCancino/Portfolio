@@ -7,7 +7,8 @@
     height: 85vh;
 }
 .hello{
-    color: #5800FF;
+    /* color: #5800FF; */
+    color: #01D7B7;
     font-weight: 500;
     font-size: 1.8em;
     letter-spacing: 0.2em;
@@ -50,4 +51,21 @@
 .Download:hover{
     color: #FFC600;
     border: 2px solid #FFC600;
+}
+
+.right-arrow{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 4em;
+    height: 4em;
+    margin-right: 2em;
+    margin-top: 23%;
+    color: hsl(0, 0%, 28%);
+    transition: 0.2s;
+}
+
+.right-arrow:hover{
+    color: #FFC600;
 }
