@@ -4,8 +4,9 @@ import foto from '../../assets/foto.jpg'
 import cinta from '../../assets/cinta.png'
 import {motion} from 'framer-motion'
 import Typist from 'react-typist';
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import {Link} from 'react-router-dom';
+import acerca from '../../assets/acercademi.png'
 
 
 const About = () =>{
@@ -23,15 +24,13 @@ const About = () =>{
       const text = '<p>En la fase de maquetación de un documento o una página web o para probar un tipo de letra es necesario visualizar el aspecto del diseño. En este momento se necesita un contenido sobre el que aplicar el formato para obtener esta muestra. Cualquier texto puede utilizarse con este cometido, puesto que lo importante es el aspecto no el significado y será reemplazado en la versión final.</p>'
 
     return(
-        <div className='About'>
-            <motion.h3 
-                initial={{x: '-100vw'}} 
-                animate={{x: 0}}
-                transition={{type: 'Spring', duration: 0.8, bounce: 1, stiffness: 50 }}
-                className='about-title'
-            > 
-                {'<h3>ACERCA DE MI</h3>'}
-            </motion.h3>
+        <motion.div 
+            className='About'
+            initial={{scaleY: 0}}
+            animate={{scaleY:1}}
+            exit={{scaleY: 0}}
+            transition={{duration:0.3}}
+        >
 
             <div className='container-code'>
                 <motion.div className='code'
@@ -69,11 +68,25 @@ const About = () =>{
                     initial="hidden"
                     animate="show"
                 >
-                    <Link to='/'><FaAngleLeft className= 'left-arrow'/></Link>
-                    <Link to='/skills'><FaAngleRight className= 'right-arrow'/></Link>
+                    <Link to='/'><FaAngleUp className= 'up-arrow'/></Link>
+                    <Link to='/skills'><FaAngleDown className= 'down-arrow'/></Link>
             </motion.div>
-            
-        </div>
+            <motion.img 
+                src={acerca}
+                className='acerca-img'
+                alt='acerca imagen'
+                variants={{hidden: { opacity: 0 },
+                            show: {
+                                opacity: 0.1,
+                                transition: {
+                                duration: 4
+                                }
+                            }
+                }}
+                initial="hidden"
+                animate="show"
+            ></motion.img>   
+        </motion.div>
     )
 }
 

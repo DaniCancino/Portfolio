@@ -25,8 +25,8 @@
 }
 
 .BurgerMenu .bars-menu {
-  width: 40%;
-  height: 40%;
+  width: 3em;
+  height: 3em;
 }
 
 .BurgerMenu .bars-menu:hover {
@@ -46,7 +46,7 @@
   transition: 0.4s;
 }
 
-@-webkit-keyframes popup {
+@-webkit-keyframes down {
   0% {
     -webkit-transform: translateY(-100vh);
             transform: translateY(-100vh);
@@ -89,7 +89,7 @@
   }
 }
 
-@keyframes popup {
+@keyframes down {
   0% {
     -webkit-transform: translateY(-100vh);
             transform: translateY(-100vh);
@@ -155,8 +155,9 @@
   height: 100vh;
   background-color: #212121;
   z-index: 100;
-  -webkit-animation: popup 0.5s;
-          animation: popup 0.5s;
+  -webkit-animation: down 0.5s;
+          animation: down 0.5s;
+  overflow: hidden;
 }
 
 .menu-extended .bars-menu {
@@ -203,12 +204,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
-  height: 60%;
+  width: 50%;
+  height: 70vh;
   text-decoration: none;
   list-style: none;
   margin-right: 5%;
   font-size: 1.4em;
+  text-align: left;
+  margin-top: -4em;
 }
 
 .menu-extended .Links-header .Link {
@@ -217,10 +220,41 @@
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  width: 40%;
+  width: 25%;
   font-size: 1em;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  margin-left: 5em;
+}
+
+.menu-extended .Links-header .Link .inicio-bckg {
+  opacity: 0%;
+  position: absolute;
+  height: 15vh;
+}
+
+.menu-extended .Links-header .Link .acerca-bckg {
+  opacity: 0%;
+  position: absolute;
+  height: 15vh;
+}
+
+.menu-extended .Links-header .Link .habilidades-bckg {
+  opacity: 0%;
+  position: absolute;
+  height: 15vh;
+}
+
+.menu-extended .Links-header .Link .proyectos-bckg {
+  opacity: 0%;
+  position: absolute;
+  height: 15vh;
+}
+
+.menu-extended .Links-header .Link .contacto-bckg {
+  opacity: 0%;
+  position: absolute;
+  height: 15vh;
 }
 
 .menu-extended .Links-header .Link:hover {
@@ -228,7 +262,130 @@
   cursor: pointer;
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.menu-extended .Links-header .Link:hover .inicio-bckg {
+  margin-left: -20vw;
+  margin-top: -5vh;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: -200;
+  font-family: Monoton;
+  color: #fff;
+  font-size: 2.9em;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.menu-extended .Links-header .Link:hover .acerca-bckg {
+  margin-left: -26vw;
+  margin-top: -5vh;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: -100;
+  font-family: Monoton;
+  color: #fff;
+  font-size: 2.9em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.menu-extended .Links-header .Link:hover .habilidades-bckg {
+  margin-left: -35vw;
+  margin-top: -4vh;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: -100;
+  font-family: Monoton;
+  color: #fff;
+  font-size: 2.6em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.menu-extended .Links-header .Link:hover .proyectos-bckg {
+  margin-left: -35vw;
+  margin-top: -5vh;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: -100;
+  font-family: Monoton;
+  color: #fff;
+  font-size: 2.9em;
+}
+
+.menu-extended .Links-header .Link:hover .contacto-bckg {
+  margin-left: -33vw;
+  margin-top: -5vh;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.1;
+  z-index: -100;
+  font-family: Monoton;
+  color: #fff;
+  font-size: 3em;
+}
+
+@media (max-width: 1050px) {
+  .Links-header {
+    margin-left: -8em;
+  }
+  .Link .contacto-bckg {
+    display: none;
+  }
+  .Link .proyectos-bckg {
+    display: none;
+  }
+  .Link .habilidades-bckg {
+    display: none;
+  }
+  .Link .acerca-bckg {
+    display: none;
+  }
+  .Link .inicio-bckg {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .Links-header {
+    margin-left: -14em;
+  }
+}
+
+@media (max-width: 500px) {
+  .bars-menu {
+    margin-right: 1em;
+  }
+  .Links-header {
+    margin-left: -19em;
+    width: 100%;
+  }
+  .Link {
+    font-size: 0.6em;
+  }
 }
 /*# sourceMappingURL=BurgerMenu.css.map */

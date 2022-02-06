@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     height: 85vh;
+    overflow: hidden;
 }
 .hello{
     /* color: #5800FF; */
@@ -32,6 +33,7 @@
     image-rendering: optimizeQuality;
     z-index: -1;
     opacity: 35%;
+    margin-top: -5em;
 }
 
 .Download{
@@ -41,7 +43,7 @@
     align-items: center;
     text-decoration: none;
     color: #fff;
-    width: 12%;
+    width: 8.5em;
     margin-top: 6em;
     border: 2px solid #fff;
     padding: 0.8em;
@@ -53,19 +55,82 @@
     border: 2px solid #FFC600;
 }
 
-.right-arrow{
-    position: absolute;
-    top: 0px;
+.down-arrow{
+    position: fixed;
     bottom: 0px;
-    right: 0px;
+    left: 0px;
     width: 4em;
     height: 4em;
-    margin-right: 2em;
-    margin-top: 23%;
+    margin-left: 3em;
+    margin-bottom: 2em;
     color: hsl(0, 0%, 28%);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
-.right-arrow:hover{
+.down-arrow:hover{
     color: #FFC600;
+    transform: scale(1.1, 1.1);
+}
+
+/* MEDIA-QUERYS */
+
+@media (max-width: 950px){
+    .name-presentation{
+        font-size: 4.5em;
+        margin: 0.5em 0;
+    }
+    .carrer{
+        margin-top: 1em;
+    }
+    .down-arrow{
+        color: hsl(0, 0%, 100%);
+    }
+    .down-arrow:active{
+        color: #FFC600;
+    }
+    .hello{
+        margin-top: 6em;
+    }
+}
+
+@media (max-width: 730px){
+    .hello{
+        font-size: 1.4em;
+        margin-top: 8em;
+    }
+    .name-presentation{
+        font-size: 3.5em;
+        margin: 0.5em 0;
+    }
+    .carrer{
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 570px){
+    .hello{
+        font-size: 1.2em;
+        margin-top: 10em;
+    }
+    .name-presentation{
+        font-size: 3em;
+        margin: 0.5em 0;
+    }
+}
+
+@media (max-width: 480px){
+    .hello{
+        font-size: 1em;
+        margin-top: 7em;
+    }
+    .name-presentation{
+        font-size: 2em;
+        margin: 2em 0;
+    }
+    .Download{
+        margin-top: 2em;
+    }
+    .down-arrow{
+        margin-left: 1em;
+    }
 }

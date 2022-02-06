@@ -10,7 +10,7 @@
 .Logo{
     width: 350px;
     height: 200px;
-    margin-left: -6%;
+    margin-left: -4em;
     animation: rotate 8s infinite;
 }
 
@@ -27,6 +27,13 @@
         transform: rotateX(360deg);
         transform: rotateY(360deg);
       }
+}
+
+@media (max-width: 500px){
+  .Logo{
+    margin-left: -7.5em;
+    margin-top: 1em;
   }
+}
 
 

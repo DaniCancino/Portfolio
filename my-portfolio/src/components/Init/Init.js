@@ -4,7 +4,7 @@ import fondo from '../../assets/DobleExpo3.png'
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import Typist from 'react-typist';
 import {motion} from 'framer-motion'
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 
 const container = {
@@ -22,7 +22,14 @@ const Init = () =>{
 
 
     return(
-        <div className='Init'>
+        <motion.div 
+            className='Init'
+            initial={{scaleY: 0}}
+            animate={{scaleY:1}}
+            exit={{scaleY: 0}}
+            transition={{duration:0.3}}
+        >
+
             <img src={fondo} alt='fondo' className='fondo-img'></img>
             <Typist className='hello'>
                 <Typist.Delay ms={2000} />
@@ -59,15 +66,16 @@ const Init = () =>{
                 <AiOutlineCloudDownload />
                 Descargar CV
             </motion.a>
-            
+
             <motion.div
             variants={container}
             initial="hidden"
             animate="show"
+            className='arrow-container'
             >
-             <Link to='/about'><FaAngleRight className= 'right-arrow'/></Link>
+             <Link to='/about'><FaAngleDown className= 'down-arrow'/></Link>
             </motion.div>
-        </div>
+        </motion.div>
     )
 }
 
