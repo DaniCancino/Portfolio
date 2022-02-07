@@ -62,7 +62,7 @@
     width: 4em;
     height: 4em;
     margin-left: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     color: hsl(0, 0%, 28%);
     transition: 0.3s;
 }
@@ -84,6 +84,7 @@
     }
     .down-arrow{
         color: hsl(0, 0%, 100%);
+        margin-left: 5vw;
     }
     .down-arrow:active{
         color: #FFC600;
@@ -130,7 +131,7 @@
     .Download{
         margin-top: 2em;
     }
-    .down-arrow{
-        margin-left: 1em;
+    .carrer{
+        margin-top: -1.5em;
     }
 }

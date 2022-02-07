@@ -15,28 +15,28 @@ const BurgerMenu = () =>{
 
                     <Link  to= '/' className='Link' onClick={() => setState(false)}>
                         <AiOutlineHome /> Inicio
-                        <div className='inicio-bckg'>INICIO</div>
                     </Link>
+                        <div className='inicio-bckg'>INICIO</div>
 
                     <Link to='about' className='Link' onClick={() => setState(false)}>
                         <FaRegUser /> Acerca
-                        <div className='acerca-bckg'>ACERCA</div>
                     </Link>
+                        <div className='acerca-bckg'>ACERCA DE MI</div>
 
                     <Link to='skills' className='Link' onClick={() => setState(false)}>
                         <FaRegHandSpock /> Habilidades
-                        <div className='habilidades-bckg'>HABILIDADES</div>
                     </Link>
+                        <div className='habilidades-bckg'>HABILIDADES</div>
 
                     <Link to='proyectos' className='Link' onClick={() => setState(false)}>
                         <FaRegFolder /> Proyectos
-                        <div className='proyectos-bckg'>PROYECTOS</div>
                     </Link>
+                        <div className='proyectos-bckg'>PROYECTOS</div>
 
                     <Link to='contacto' className='Link' onClick={() => setState(false)}>
                         <FaRegEnvelope /> Contacto
-                        <div className='contacto-bckg'>CONTACTO</div>
                     </Link>
+                        <div className='contacto-bckg'>CONTACTO</div>
             </div>
         </div>
     )

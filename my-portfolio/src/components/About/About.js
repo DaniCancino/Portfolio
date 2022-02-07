@@ -6,7 +6,6 @@ import {motion} from 'framer-motion'
 import Typist from 'react-typist';
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import {Link} from 'react-router-dom';
-import acerca from '../../assets/acercademi.png'
 
 
 const About = () =>{
@@ -21,7 +20,7 @@ const About = () =>{
         }
       }
 
-      const text = '<p>En la fase de maquetación de un documento o una página web o para probar un tipo de letra es necesario visualizar el aspecto del diseño. En este momento se necesita un contenido sobre el que aplicar el formato para obtener esta muestra. Cualquier texto puede utilizarse con este cometido, puesto que lo importante es el aspecto no el significado y será reemplazado en la versión final.</p>'
+      const text = '<p>Hola me llamo Daniel, soy venezolano radicado actualmente en Argentina con gran pasion al diseño y la lógica, soy una persona activa que se mantiene en constante apredinzaje y crecimiento personal, soy Full Stack Developer pero me inclino mas por el Frontend ya que es una rama de la progrmación web que une mis pasiones.</p>'
 
     return(
         <motion.div 
@@ -33,11 +32,7 @@ const About = () =>{
         >
 
             <div className='container-code'>
-                <motion.div className='code'
-                    variants={container}
-                    initial="hidden"
-                    animate="show"
-                >
+                <div className='code'>
                     <div className='code-header'>
                         <div className='circle-container'>
                             <div className='circle-red'>x</div>
@@ -49,18 +44,14 @@ const About = () =>{
                         <Typist.Delay ms={1000} />
                         {text}
                     </Typist>
-                </motion.div>
-                <motion.div className='marco-exterior'
-                    variants={container}
-                    initial="hidden"
-                    animate="show"
-                >
+                </div>
+                <div className='marco-exterior'>
                     <img src={cinta} alt='cinta' className='cinta'></img>
                     <img src={cinta} alt='cinta' className='cinta-dos'></img>
                     <div className='marco-interior'>
                             <img src={foto} alt='foto about' className='foto-about'></img>
                     </div>
-                </motion.div>
+                </div>
             </div>
 
             <motion.div
@@ -71,13 +62,11 @@ const About = () =>{
                     <Link to='/'><FaAngleUp className= 'up-arrow'/></Link>
                     <Link to='/skills'><FaAngleDown className= 'down-arrow'/></Link>
             </motion.div>
-            <motion.img 
-                src={acerca}
+            <motion.div
                 className='acerca-img'
-                alt='acerca imagen'
                 variants={{hidden: { opacity: 0 },
                             show: {
-                                opacity: 0.1,
+                                opacity: 0.2,
                                 transition: {
                                 duration: 4
                                 }
@@ -85,7 +74,7 @@ const About = () =>{
                 }}
                 initial="hidden"
                 animate="show"
-            ></motion.img>   
+            >ACERCA DE MI</motion.div>   
         </motion.div>
     )
 }

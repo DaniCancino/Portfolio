@@ -23,11 +23,11 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
+    font-family: Monoton;
+    font-size: 5em;
+    color: #fff;
+    margin-top: 10vh;
     z-index: -1;
-    margin-left: 38vw;
-    margin-top: -60vh;
-    transform: rotate(90deg);
-    opacity: 10%;
 }
 
 .container-code{
@@ -47,7 +47,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 45%;
-    height: 70%;
+    height: 65%;
     background-color: #8D8D8D;
     border: 1px solid #6A6A6A;
     border-radius: 3px;
@@ -144,8 +144,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 18%;
-    height: 55%;
+    width: 23%;
+    height: 65%;
     background-color: #f1f1f1;
     border: 1px solid #C4C4C4;
     box-shadow: 3px 3px  10px 1px #000;
@@ -200,4 +200,94 @@
 .up-arrow:hover{
     color: #FFC600;
     transform: scale(1.1, 1.1);
+}
+
+
+
+
+
+
+/* MEDIA QUERYS ABOUT */
+
+@media (max-width: 1100px){
+    .marco-exterior{
+        width: 25%;
+        height: 45vh;
+    }
+    .circle-container{
+        width: 13%;
+    }
+}
+
+@media (max-width: 950px){
+    .marco-exterior{
+       display: none;
+    }
+    .up-arrow{
+        position: fixed;
+        margin-top: 88vh;
+        margin-left: 88vw;
+        color: #fff;
+    }
+    .container-code{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .code{
+        width: 70%;
+    }
+    .circle-container{
+        width: 10%;
+    }
+}
+
+@media (max-width: 750px){
+    .acerca-img{
+        font-size: 4em;
+        margin-top: 15%;
+    }
+    .circle-container{
+        width: 15%;
+    }
+}
+
+@media (max-width: 600px) {
+    .acerca-img{
+        font-size: 3em;
+        margin-top: 20%;
+    }
+    .up-arrow{
+        margin-left: 83vw;
+    }
+}
+
+@media (max-width: 500px){
+    .about-description{
+        margin-top: 5%;
+    }
+    .acerca-img{
+        margin-top: 30%;
+        font-size: 2.5em;
+    }
+    .code{
+        width: 90%;
+        margin-left: 1em;
+    }
+}
+
+@media (max-width: 400px){
+    .acerca-img{
+        margin-top: 40%;
+    }
+    .up-arrow{
+        margin-left: 80vw;
+    }
+}
+
+@media (max-width: 350px){
+    .acerca-img{
+        font-size: 2em;
+    }
 }
