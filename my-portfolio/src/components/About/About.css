@@ -186,13 +186,12 @@
 
 .up-arrow{
     position: fixed;
-    top: 0px;
     bottom: 0px;
-    left: 0px;
+    right: 0px;
     width: 4em;
     height: 4em;
-    margin-left: 3em;
-    margin-top: 7em;
+    margin-right: 3em;
+    margin-bottom: 1em;
     color: hsl(0, 0%, 28%);
     transition: 0.3s;
 }
@@ -225,8 +224,6 @@
     }
     .up-arrow{
         position: fixed;
-        margin-top: 88vh;
-        margin-left: 88vw;
         color: #fff;
     }
     .container-code{
@@ -258,9 +255,6 @@
         font-size: 3em;
         margin-top: 20%;
     }
-    .up-arrow{
-        margin-left: 83vw;
-    }
 }
 
 @media (max-width: 500px){
@@ -279,10 +273,14 @@
 
 @media (max-width: 400px){
     .acerca-img{
-        margin-top: 40%;
+        margin-top: 27%;
+    }
+    .container-code{
+        margin-top: 2em;
+        font-size: 0.9em;
     }
     .up-arrow{
-        margin-left: 80vw;
+        margin-right: 1em ;
     }
 }
 
