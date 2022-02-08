@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import {motion} from 'framer-motion'
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 
 const Contact =() =>{

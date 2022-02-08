@@ -142,4 +142,29 @@
     margin-top: 20vh;
   }
 }
+
+@media (max-width: 330px) {
+  .skills-title {
+    font-size: 1.7em;
+    margin-top: 20vh;
+  }
+  .html-progress {
+    font-size: 0.8em;
+  }
+  .css-progress {
+    font-size: 0.8em;
+  }
+  .js-progress {
+    font-size: 0.8em;
+  }
+  .react-progress {
+    font-size: 0.8em;
+  }
+  .node-progress {
+    font-size: 0.8em;
+  }
+  .post-progress {
+    font-size: 0.8em;
+  }
+}
 /*# sourceMappingURL=Skills.css.map */
