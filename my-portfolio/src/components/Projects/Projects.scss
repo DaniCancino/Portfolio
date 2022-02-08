@@ -1,0 +1,17 @@
+.Projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.projects-title{
+    position: fixed;
+    font-family: Monoton;
+    font-size: 5em;
+    top: 0px;
+    color: #fff;
+    margin-top: 10vh;
+}

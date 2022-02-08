@@ -28,12 +28,12 @@ const BurgerMenu = () =>{
                     </Link>
                         <div className='habilidades-bckg'>HABILIDADES</div>
 
-                    <Link to='proyectos' className='Link' onClick={() => setState(false)}>
+                    <Link to='projects' className='Link' onClick={() => setState(false)}>
                         <FaRegFolder /> Proyectos
                     </Link>
                         <div className='proyectos-bckg'>PROYECTOS</div>
 
-                    <Link to='contacto' className='Link' onClick={() => setState(false)}>
+                    <Link to='hire' className='Link' onClick={() => setState(false)}>
                         <FaRegEnvelope /> Contacto
                     </Link>
                         <div className='contacto-bckg'>CONTACTO</div>

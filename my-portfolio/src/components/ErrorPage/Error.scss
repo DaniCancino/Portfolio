@@ -1,0 +1,34 @@
+.Error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.error-img{
+    width: 30em;
+    height: 24em;
+    margin-top: 5vh;
+}
+
+.error-title{
+    font-size: 4em;
+    font-family: Monoton;
+    margin-top: -10vh;
+}
+
+
+@media (max-width: 500px){
+    .error-img{
+        width: 20em;
+        height: 16em;
+        margin-top: 5vh;
+    }
+    .error-title{
+        font-size: 2.5em;
+        font-family: Monoton;
+        
+    }
+}

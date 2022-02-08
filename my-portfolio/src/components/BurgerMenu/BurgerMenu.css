@@ -282,6 +282,7 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   display: block;
+  color: #01D7B7;
 }
 
 .menu-extended .Links-header .Link:hover + .acerca-bckg {
@@ -301,6 +302,7 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   display: block;
+  color: #01D7B7;
 }
 
 .menu-extended .Links-header .Link:hover + .habilidades-bckg {
@@ -320,6 +322,7 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   display: block;
+  color: #01D7B7;
 }
 
 .menu-extended .Links-header .Link:hover + .proyectos-bckg {
@@ -339,6 +342,7 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   display: block;
+  color: #01D7B7;
 }
 
 .menu-extended .Links-header .Link:hover + .contacto-bckg {
@@ -358,6 +362,7 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   display: block;
+  color: #01D7B7;
 }
 
 @media (max-width: 1050px) {

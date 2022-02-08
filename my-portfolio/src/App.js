@@ -5,6 +5,9 @@ import Header from './components/Header/Header';
 import Init from './components/Init/Init';
 import Skills from './components/Skills/Skills';
 import {AnimatePresence} from 'framer-motion';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Error from './components/ErrorPage/Error';
 
 function App () {
 
@@ -24,8 +27,17 @@ function App () {
               <About />
             </Route>
             <Route exact path='/skills'>
-              <Skills />  
+              <Skills /> 
             </Route>
+            <Route exact path='/projects'>
+              <Projects />
+            </Route>
+            <Route exact path='/hire'>
+              <Contact />
+            </Route>
+            <Route path="*">
+            <Error />
+          </Route>
           </Switch>
         </AnimatePresence>
     </div>

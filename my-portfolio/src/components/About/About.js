@@ -18,7 +18,7 @@ const About = () =>{
             duration: 3
           }
         }
-      }
+    }
 
       const text = '<p>Hola me llamo Daniel, soy venezolano radicado actualmente en Argentina con gran pasion al diseño y la lógica, soy una persona activa que se mantiene en constante apredinzaje y crecimiento personal, soy Full Stack Developer pero me inclino mas por el Frontend ya que es una rama de la progrmación web que une mis pasiones.</p>'
 
@@ -66,15 +66,15 @@ const About = () =>{
                 className='acerca-img'
                 variants={{hidden: { opacity: 0 },
                             show: {
-                                opacity: 0.2,
+                                opacity: 0.5,
                                 transition: {
-                                duration: 4
+                                duration: 3
                                 }
                             }
                 }}
                 initial="hidden"
                 animate="show"
-            >ACERCA DE MI</motion.div>   
+            >ACERCA DE MI</motion.div>
         </motion.div>
     )
 }
