@@ -104,7 +104,7 @@
 }
 
 .skills-container .progress .progress-bar .post-progress {
-  width: 67%;
+  width: 70%;
   height: 100%;
   background-color: #01D7B7;
   border-radius: 9px;
@@ -146,7 +146,10 @@
 @media (max-width: 330px) {
   .skills-title {
     font-size: 1.7em;
-    margin-top: 20vh;
+    margin-top: 18vh;
+  }
+  .skills-container {
+    margin-top: 3.7em;
   }
   .html-progress {
     font-size: 0.8em;

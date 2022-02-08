@@ -31,59 +31,89 @@ const Skills = () =>{
             </motion.div>
 
             <div className='skills-container'>
-                <div className='progress'>
+                <motion.div 
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 1, bounce: 1, stiffness: 50 }}
+                >
                     <div className='title-progress'>
                         <spam>HTML/CSS</spam>
                     </div>
                     <div className='progress-bar'>
                         <div className='html-progress'>95%</div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='progress'>
+                <motion.div 
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                 animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 0.85, bounce: 1, stiffness: 50 }}
+                >
                     <div className='title-progress'>
                         <spam>ADOBE PS</spam>
                     </div>
                     <div className='progress-bar'>
                         <div className='css-progress'>90%</div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='progress'>
+                <motion.div
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 0.7, bounce: 1, stiffness: 50 }}
+                >
                     <div className='title-progress'>
                         <spam>JAVASCRIPT</spam>
                     </div>
                     <div className='progress-bar'>
                         <div className='js-progress'>87%</div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='progress'>
+                <motion.div 
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 0.55, bounce: 1, stiffness: 50 }}
+                >
                     <div className='title-progress'>
                         <spam>REACT</spam>
                     </div>
                     <div className='progress-bar'>
                         <div className='react-progress'>85%</div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='progress'>
+                <motion.div 
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 0.4, bounce: 1, stiffness: 50 }}
+                >
                     <div className='title-progress'>
                         <spam>NODE JS</spam>
                     </div>
                     <div className='progress-bar'>
                         <div className='node-progress'>75%</div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='progress'>
+                <motion.div 
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 0.25, bounce: 1, stiffness: 50 }}
+                >
                     <div className='title-progress'>
                         <spam>POSTGRES SQL</spam>
                     </div>
                     <div className='progress-bar'>
-                        <div className='post-progress'>67%</div>
+                        <div className='post-progress'>70%</div>
                     </div>
-                </div>
+                </motion.div>
                 
             </div>
 
