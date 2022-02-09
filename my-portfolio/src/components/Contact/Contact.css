@@ -215,6 +215,9 @@ textarea {
             align-items: center;
     margin-top: 15%;
   }
+  .contact-container .form-contact {
+    padding-top: 1.5em;
+  }
   .contact-container .form-contact .submit-button {
     width: 30%;
     height: 5vh;
@@ -275,10 +278,13 @@ textarea {
 @media (max-width: 375px) {
   .contact-title {
     font-size: 1.5em;
-    margin-top: 35%;
+    margin-top: 25%;
   }
   .contact-container {
-    margin-top: 28%;
+    margin-top: 30%;
+  }
+  .form-contact {
+    padding-top: 1.5em;
   }
 }
 /*# sourceMappingURL=Contact.css.map */
