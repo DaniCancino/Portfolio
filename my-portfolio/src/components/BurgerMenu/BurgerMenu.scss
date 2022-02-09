@@ -89,7 +89,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        margin: 1.2em 2.4em 0 0;
+        margin: 1.2em 1.8em 0 0;
     }
     .close-menu:hover{
         cursor: pointer;
@@ -275,9 +275,15 @@
     }
 }
 
-@media (max-width: 770px){
+@media screen and (max-width: 770px){
     .Links-header{
         margin-left: -8em;
+    }
+    .BurgerMenu{
+        width: 10%;
+        height: 80%;
+        margin-top: 1.5em;
+        margin-right: 0.8em;
     }
 }
 

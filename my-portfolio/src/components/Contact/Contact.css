@@ -42,6 +42,7 @@
           align-items: center;
   width: 70%;
   height: 50vh;
+  margin-top: 5%;
 }
 
 .form-contact {
@@ -215,6 +216,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 5%;
   }
   .contact-container .form-contact {
     margin-top: -13vh;
@@ -255,9 +257,11 @@ textarea {
   }
   .contact-container {
     width: 90%;
+    margin-top: 5%;
   }
   .form-contact {
     width: 100%;
+    margin-top: 5%;
   }
 }
 
@@ -268,16 +272,21 @@ textarea {
   }
   .contact-container {
     width: 95%;
+    margin-top: 5%;
   }
   .form-contact {
     width: 100%;
+    margin-top: 5%;
   }
 }
 
 @media (max-width: 375px) {
   .contact-title {
     font-size: 1.5em;
-    margin-top: 40%;
+    margin-top: 20%;
+  }
+  .form-contact {
+    margin-top: 2em;
   }
 }
 /*# sourceMappingURL=Contact.css.map */
