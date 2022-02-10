@@ -45,7 +45,7 @@ const Projects =() =>{
                     <Card contentPicture={share} framework={shareit}/>
                 </a>
                 <a 
-                    href='https://www.google.com/'
+                    href='https://recipes-seven-nu.vercel.app/'
                     target='_blank'
                     rel="noreferrer"
                 >
