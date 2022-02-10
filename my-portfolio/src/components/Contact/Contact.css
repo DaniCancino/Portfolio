@@ -225,6 +225,7 @@ textarea {
   .contact-container .socials-container {
     height: 8vh;
     margin-top: 1%;
+    width: 60%;
   }
   .contact-container .socials-container h3 {
     display: none;
