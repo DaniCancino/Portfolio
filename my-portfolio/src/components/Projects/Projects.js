@@ -11,7 +11,7 @@ import recipes from '../../assets/recipesApp.jpg'
 const shareit = ['html', 'SASS', 'JavaScript', 'React', 'Redux', 'Firebase', 'ExpressJS', 'PostgresSQL', 'Sequelize']
 const recipesApp = ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'ExpresJS', 'PostgresSQL', 'Sequelize']
 
-const Projects =({}) =>{
+const Projects =() =>{
     return(
         <motion.div 
             className='Projects'
