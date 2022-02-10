@@ -78,6 +78,9 @@
 }
 
 @media screen and (max-width: 530px) {
+  .Projects {
+    margin-top: 12vh;
+  }
   .projects-title {
     font-size: 3em;
     margin-top: 2.2em;

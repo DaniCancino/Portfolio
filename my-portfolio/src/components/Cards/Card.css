@@ -166,6 +166,9 @@
     -o-object-fit: fill;
        object-fit: fill;
   }
+  .card-header .circles {
+    width: 14%;
+  }
 }
 
 @media screen and (max-width: 390px) {
