@@ -37,13 +37,13 @@ const Contact =() =>{
     setLoad(true)
     if(!form.name || !form.email || !form.subject || !form.message){
         setLoad(false)
-        swal("Error", "Asegurate de llenar todos lo campos.", "error");
+        swal("Error", "Asegurate de llenar todos lo campos correctamente.", "error");
     }else{
         emailjs.sendForm('service_5rld747', 'template_k4yr77r', form.current, 'user_XWEOmi1dwZVxRyxRY2VO5')
         .then((result) => {
             setLoad(false)
             console.log(result.text);
-            swal("Email enviado", "Me pondré en contacto contigo lo mas pron posible.", "success");
+            swal("Email enviado", "Me pondré en contacto contigo lo mas pronto posible.", "success");
             handleReset()
         }, (error) => {
             swal("Error", error.text, "error");
