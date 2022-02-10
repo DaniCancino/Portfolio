@@ -121,33 +121,42 @@ const Contact =() =>{
                     <button type='submit' className='submit-button'>Enviar</button>
                 </form>
                 <div className='socials-container'>
-                    <h3>También puedes constactarme en:</h3>
+                    <h3>Mis redes:</h3>
                     <div className='socials'>
-                        <a 
+                        <motion.a 
                             href='https://www.linkedin.com/in/danicancino-dev/'
                             target='_blank'
                             rel="noreferrer"
                             className='social-links'
+                            initial={{x: '100vw'}}
+                            animate={{x: 0}}
+                            transition={{type: 'Spring', duration: 0.5, bounce: 1, stiffness: 50 }}
                         >
                             <FaLinkedin />
-                        </a>
+                        </motion.a>
 
-                        <a 
+                        <motion.a 
                             href='https://github.com/DaniCancino'
                             target='_blank'
                             rel="noreferrer"
                             className='social-links'
+                            initial={{x: '100vw'}}
+                            animate={{x: 0}}
+                            transition={{type: 'Spring', duration: 0.75, bounce: 1, stiffness: 50 }}
                         >
                             <FaGithub />
-                        </a>
-                        <a 
+                        </motion.a>
+                        <motion.a 
                             href='https://twitter.com/ziete_77'
                             target='_blank'
                             rel="noreferrer"
                             className='social-links'
+                            initial={{x: '100vw'}}
+                            animate={{x: 0}}
+                            transition={{type: 'Spring', duration: 1, bounce: 1, stiffness: 50 }}
                         >
                             <FaTwitter />
-                        </a>
+                        </motion.a>
                     </div>
                 </div>
             </div>

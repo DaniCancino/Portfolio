@@ -16,3 +16,27 @@
     color: #fff;
     margin-top: 10vh;
 }
+
+.projects-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .Projects{
+        overflow: auto;
+    }
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 85vh;
+        margin-top: 15vh;
+    }
+}
