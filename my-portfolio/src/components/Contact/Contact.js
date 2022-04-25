@@ -68,7 +68,7 @@ const Contact =() =>{
                             show: {
                                 opacity: 0.5,
                                 transition: {
-                                duration: 3
+                                duration: 2.5
                                 }
                             }
                 }}

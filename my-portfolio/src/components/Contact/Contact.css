@@ -99,7 +99,7 @@ textarea {
   width: 20%;
   height: 4vh;
   border: none;
-  background-color: #01D7B7;
+  background-color: transparent;
   font-size: 1.1em;
   color: #fff;
   border-radius: 5px;
@@ -107,15 +107,17 @@ textarea {
   transition: 0.2s;
   font-weight: 600;
   font-family: Rubik;
+  border: 1px solid #fff;
 }
 
 .submit-button:hover {
-  background-color: #FFC600;
+  background-color: #01D7B7;
   cursor: pointer;
   color: #212121;
   font-weight: 600;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+  border: none;
 }
 
 .loader {

@@ -86,6 +86,7 @@
     .down-arrow{
         color: hsl(0, 0%, 100%);
         margin-left: 5vw;
+        font-size: 0.8rem;
     }
     .down-arrow:active{
         color: #FFC600;

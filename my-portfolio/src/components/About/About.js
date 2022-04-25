@@ -20,7 +20,7 @@ const About = () =>{
         }
     }
 
-      const text = '<p>Hola me llamo Daniel, soy venezolano radicado actualmente en Argentina con gran pasion al diseño y la lógica, soy una persona activa que se mantiene en constante apredinzaje y crecimiento personal, soy Full Stack Developer pero me inclino mas por el Frontend ya que es una rama de la progrmación web que une mis pasiones.</p>'
+      const text = '<p>Hola me llamo Daniel, soy Venezolano actualmente radico en Argentina. Poseo una gran pasión al arte, diseño y junto a esto me gusta mucho la lógica y resolver acertijos, soy Full Stack Developer pero me inclino más por el Frontend ya que es una rama de la programación web que une mis pasiones. Además un desarrollador atento a los detalles y aplico mis maximos conocimientos en cada proyecto para poder dar el mayor rendimiento de mi y entregar un proyecto fuera de serie, me mantengo siempre en constante aprendizaje para crecer cada día personal y profesionalmente.</p>'
 
     return(
         <motion.div 
@@ -68,7 +68,7 @@ const About = () =>{
                             show: {
                                 opacity: 0.5,
                                 transition: {
-                                duration: 3
+                                duration: 2.5
                                 }
                             }
                 }}
