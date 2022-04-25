@@ -1,7 +1,8 @@
 import React from 'react';
 import './Skills.css'
 import {motion} from 'framer-motion'
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp, FaHtml5, FaCss3Alt, FaSass, FaReact, FaNode } from "react-icons/fa";
+import { SiJavascript, SiPostgresql, SiTypescript } from "react-icons/si";
 import {Link} from 'react-router-dom';
 
 const Skills = () =>{
@@ -27,7 +28,7 @@ const Skills = () =>{
                 initial="hidden"
                 animate="show"
             >
-                     MIS HABILIDADES
+                     TECNOLOGÍAS
             </motion.div>
 
             <div className='skills-container'>
@@ -38,24 +39,32 @@ const Skills = () =>{
                     transition={{type: 'Spring', duration: 1, bounce: 1, stiffness: 50 }}
                 >
                     <div className='title-progress'>
-                        <spam>HTML/CSS</spam>
-                    </div>
-                    <div className='progress-bar'>
-                        <div className='html-progress'>95%</div>
+                        <FaHtml5 size={60} className='icons-skills'/>
+                        <spam>HTML</spam>
                     </div>
                 </motion.div>
 
                 <motion.div 
                     className='progress'
                     initial={{x: '-100vw'}}
-                 animate={{x: 0}}
-                    transition={{type: 'Spring', duration: 0.85, bounce: 1, stiffness: 50 }}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 1, bounce: 1, stiffness: 50 }}
                 >
                     <div className='title-progress'>
-                        <spam>ADOBE PS</spam>
+                        <FaCss3Alt size={60} className='icons-skills'/>
+                        <spam>CSS</spam>
                     </div>
-                    <div className='progress-bar'>
-                        <div className='css-progress'>90%</div>
+                </motion.div>
+
+                <motion.div 
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 1, bounce: 1, stiffness: 50 }}
+                >
+                    <div className='title-progress'>
+                        <FaSass size={60} className='icons-skills'/>
+                        <spam>SASS</spam>
                     </div>
                 </motion.div>
 
@@ -66,10 +75,19 @@ const Skills = () =>{
                     transition={{type: 'Spring', duration: 0.7, bounce: 1, stiffness: 50 }}
                 >
                     <div className='title-progress'>
+                        <SiJavascript size={60} className='icons-skills' />
                         <spam>JAVASCRIPT</spam>
                     </div>
-                    <div className='progress-bar'>
-                        <div className='js-progress'>87%</div>
+                </motion.div>
+                <motion.div
+                    className='progress'
+                    initial={{x: '-100vw'}}
+                    animate={{x: 0}}
+                    transition={{type: 'Spring', duration: 0.7, bounce: 1, stiffness: 50 }}
+                >
+                    <div className='title-progress'>
+                        <SiTypescript size={60} className='icons-skills' />
+                        <spam>TYPESCRIPT</spam>
                     </div>
                 </motion.div>
 
@@ -80,10 +98,8 @@ const Skills = () =>{
                     transition={{type: 'Spring', duration: 0.55, bounce: 1, stiffness: 50 }}
                 >
                     <div className='title-progress'>
+                        <FaReact size={60} className='icons-skills' />
                         <spam>REACT</spam>
-                    </div>
-                    <div className='progress-bar'>
-                        <div className='react-progress'>85%</div>
                     </div>
                 </motion.div>
 
@@ -94,10 +110,8 @@ const Skills = () =>{
                     transition={{type: 'Spring', duration: 0.4, bounce: 1, stiffness: 50 }}
                 >
                     <div className='title-progress'>
+                        <FaNode size={60} className='icons-skills' />
                         <spam>NODE JS</spam>
-                    </div>
-                    <div className='progress-bar'>
-                        <div className='node-progress'>75%</div>
                     </div>
                 </motion.div>
 
@@ -108,10 +122,8 @@ const Skills = () =>{
                     transition={{type: 'Spring', duration: 0.25, bounce: 1, stiffness: 50 }}
                 >
                     <div className='title-progress'>
+                        <SiPostgresql size={60} className='icons-skills' />
                         <spam>POSTGRES SQL</spam>
-                    </div>
-                    <div className='progress-bar'>
-                        <div className='post-progress'>70%</div>
                     </div>
                 </motion.div>
                 

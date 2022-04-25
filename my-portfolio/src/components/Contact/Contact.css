@@ -13,7 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  overflow: hidden;
+  height: auto;
 }
 
 .contact-title {
@@ -63,6 +63,7 @@
   border: 1px solid #C1C1C1;
   border-radius: 10px;
   padding: 1em 0;
+  margin-bottom: 5%;
 }
 
 input {
@@ -180,14 +181,14 @@ textarea {
   font-style: none;
   color: #fff;
   font-size: 2.5em;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .socials .social-links:hover {
-  color: #FFC600;
-  -webkit-transform: scale3d(-1.1, 1.1, 1.1);
-          transform: scale3d(-1.1, 1.1, 1.1);
+  color: #01D7B7;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 @media (max-width: 900px) {

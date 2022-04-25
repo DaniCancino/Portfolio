@@ -24,7 +24,7 @@ const BurgerMenu = () =>{
                         <div className='acerca-bckg'>ACERCA DE MI</div>
 
                     <Link to='skills' className='Link' onClick={() => setState(false)}>
-                        <FaRegHandSpock /> Habilidades
+                        <FaRegHandSpock /> Tecnologías
                     </Link>
                         <div className='habilidades-bckg'>HABILIDADES</div>
 

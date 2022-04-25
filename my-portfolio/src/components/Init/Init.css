@@ -34,7 +34,7 @@
     image-rendering: optimizeQuality;
     z-index: -1;
     opacity: 35%;
-    margin-top: -5em;
+    margin-top: -4em;
 }
 
 .Download{
@@ -52,8 +52,8 @@
 }
 
 .Download:hover{
-    color: #FFC600;
-    border: 2px solid #FFC600;
+    color: #01D7B7;
+    border: 2px solid #01D7B7;
 }
 
 .down-arrow{
@@ -69,7 +69,7 @@
 }
 
 .down-arrow:hover{
-    color: #FFC600;
+    color: #fff;
     transform: scale(1.1, 1.1);
 }
 

@@ -4,7 +4,8 @@
 body {
   margin: 0;
   font-family: 'Rubik', sans-serif;
-  background-color: #212121;
+  /* background-color: #212121; */
+  background: linear-gradient(160deg, rgba(10,22,43,1) 0%, rgba(24,9,46,1) 100%, rgba(26,247,170,1) 100%);
   color: #fff
 }
 

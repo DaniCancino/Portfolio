@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-.skills-title {
+.Skills .skills-title {
   position: fixed;
   font-family: Monoton;
   font-size: 5em;
@@ -26,7 +26,47 @@
   margin-top: 10vh;
 }
 
-.skills-container {
+.Skills .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 70vh;
+  margin-top: 20vh;
+}
+
+.Skills .skills-container .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+.Skills .skills-container .progress .title-progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,142 +80,58 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
-  height: 50vh;
-  margin-top: 20vh;
-}
-
-.skills-container .progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.skills-container .progress .progress-bar {
   width: 85%;
-  height: 3vh;
-  border: 1px solid #00AF95;
-  border-radius: 10px;
-}
-
-.skills-container .progress .progress-bar .html-progress {
-  width: 95%;
-  height: 100%;
-  background-color: #01D7B7;
-  border-radius: 9px;
-}
-
-.skills-container .progress .progress-bar .css-progress {
-  width: 90%;
-  height: 100%;
-  background-color: #01D7B7;
-  border-radius: 9px;
-}
-
-.skills-container .progress .progress-bar .js-progress {
-  width: 87%;
-  height: 100%;
-  background-color: #01D7B7;
-  border-radius: 9px;
-}
-
-.skills-container .progress .progress-bar .react-progress {
-  width: 85%;
-  height: 100%;
-  background-color: #01D7B7;
-  border-radius: 9px;
-}
-
-.skills-container .progress .progress-bar .node-progress {
-  width: 75%;
-  height: 100%;
-  background-color: #01D7B7;
-  border-radius: 9px;
-}
-
-.skills-container .progress .progress-bar .post-progress {
-  width: 70%;
-  height: 100%;
-  background-color: #01D7B7;
-  border-radius: 9px;
-}
-
-.skills-container .progress .title-progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 85%;
+  height: 87px;
   margin-bottom: 0.3em;
   padding-left: 5%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.Skills .skills-container .progress .title-progress .icons-skills:hover {
+  color: #01D7B7;
+}
+
+.Skills .skills-container .progress .title-progress:hover {
+  cursor: pointer;
+  color: #01D7B7;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 @media (max-width: 1200px) {
-  .skills-title {
+  .Skills .skills-title {
     margin-top: 10%;
     font-size: 4.5em;
   }
 }
 
 @media (max-width: 900px) {
-  .skills-title {
+  .Skills .skills-title {
     font-size: 3em;
     margin-top: 17vh;
   }
 }
 
 @media (max-width: 500px) {
-  .skills-title {
+  .Skills .skills-title {
+    position: absolute;
     font-size: 2em;
-    margin-top: 20vh;
+    margin-top: 12vh;
+  }
+  .Skills .skills-container {
+    width: 90%;
+    height: 60vh;
+    margin-top: 10vh;
+  }
+  .Skills .skills-container .progress {
+    width: 30%;
   }
 }
 
 @media (max-width: 400px) {
-  .skills-title {
+  .Skills .skills-title {
     font-size: 1.9em;
-    margin-top: 18vh;
-  }
-  .skills-container {
-    margin-top: 7em;
-  }
-  .html-progress {
-    font-size: 0.8em;
-  }
-  .css-progress {
-    font-size: 0.8em;
-  }
-  .js-progress {
-    font-size: 0.8em;
-  }
-  .react-progress {
-    font-size: 0.8em;
-  }
-  .node-progress {
-    font-size: 0.8em;
-  }
-  .post-progress {
-    font-size: 0.8em;
   }
 }
 /*# sourceMappingURL=Skills.css.map */
