@@ -114,6 +114,10 @@
 }
 
 @media (max-width: 500px) {
+  .Skills {
+    height: 100vh;
+    margin-top: -22%;
+  }
   .Skills .skills-title {
     position: absolute;
     font-size: 2em;
@@ -121,8 +125,8 @@
   }
   .Skills .skills-container {
     width: 90%;
-    height: 60vh;
-    margin-top: 10vh;
+    height: 70%;
+    margin-top: 20vh;
   }
   .Skills .skills-container .progress {
     width: 30%;

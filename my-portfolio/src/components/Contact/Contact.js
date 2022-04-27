@@ -132,7 +132,7 @@ const Contact =() =>{
                             animate={{x: 0}}
                             transition={{type: 'Spring', duration: 0.5, bounce: 1, stiffness: 50 }}
                         >
-                            <FaLinkedin />
+                            <FaLinkedin className='social-logo'/>
                         </motion.a>
 
                         <motion.a 
@@ -144,7 +144,7 @@ const Contact =() =>{
                             animate={{x: 0}}
                             transition={{type: 'Spring', duration: 0.75, bounce: 1, stiffness: 50 }}
                         >
-                            <FaGithub />
+                            <FaGithub className='social-logo'/>
                         </motion.a>
                         <motion.a 
                             href='https://twitter.com/ziete_77'
@@ -155,7 +155,7 @@ const Contact =() =>{
                             animate={{x: 0}}
                             transition={{type: 'Spring', duration: 1, bounce: 1, stiffness: 50 }}
                         >
-                            <FaTwitter />
+                            <FaTwitter className='social-logo'/>
                         </motion.a>
                     </div>
                 </div>

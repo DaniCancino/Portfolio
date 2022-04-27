@@ -33,7 +33,7 @@ const Init = () =>{
             <img src={perfil} alt='fondo' className='fondo-img'></img>
             <div className='text-init-container'>
                 <Typist className='hello'>
-                    <Typist.Delay ms={2000} />
+                    <Typist.Delay ms={1000} />
                     {'<h3>HELLO, WORLD.</h3>'}
                 </Typist>
 
