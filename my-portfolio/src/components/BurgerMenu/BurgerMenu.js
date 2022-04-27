@@ -26,7 +26,7 @@ const BurgerMenu = () =>{
                     <Link to='skills' className='Link' onClick={() => setState(false)}>
                         <FaRegHandSpock /> Tecnologías
                     </Link>
-                        <div className='habilidades-bckg'>HABILIDADES</div>
+                        <div className='habilidades-bckg'>TECNOLOGIAS</div>
 
                     <Link to='projects' className='Link' onClick={() => setState(false)}>
                         <FaRegFolder /> Proyectos
