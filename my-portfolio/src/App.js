@@ -8,6 +8,8 @@ import {AnimatePresence} from 'framer-motion';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Error from './components/ErrorPage/Error';
+import wave from './assets/wave2.png'
+import waveTop from './assets/wave3.png'
 
 function App () {
 
@@ -40,6 +42,8 @@ function App () {
           </Route>
           </Switch>
         </AnimatePresence>
+        <img src={wave} alt='wave' className='wave-bottom' />
+        <img src={waveTop} alt='wave' className='wave-top' />
     </div>
   );
 }
