@@ -5,21 +5,21 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 import Card from '../Cards/Card';
 import share from '../../assets/shareit.png';
-import recipes from '../../assets/recipesApp.jpg'
+import netflix from '../../assets/netflix.png'
 import quiz from '../../assets/quiz.png'
 import kxk from '../../assets/kxk.jpg'
 
 
 const deploy = {
     share: 'https://share-it-tawny.vercel.app/',
-    recipe: 'https://recipes-seven-nu.vercel.app/',
+    netflix: 'https://netflixclone-rosy.vercel.app/',
     arch: 'https://kxkportfolio.vercel.app/',
     quiz: 'https://quizgame-dc.vercel.app/'
 }
 
 const git = {
     share: 'https://github.com/henry19ag15/finalproject',
-    recipe: 'https://github.com/DaniCancino/Recipes-App',
+    netflix: 'https://github.com/DaniCancino/Netflix-Clone',
     arch: 'https://github.com/DaniCancino/Kxk-Portfolio',
     quiz: 'https://github.com/DaniCancino/Quiz-Game'
 }
@@ -51,7 +51,7 @@ const Projects =() =>{
             </motion.div>
             <div className='projects-container'>
                     <Card contentPicture={share} deploy={deploy.share} git={git.share}/>
-                    <Card contentPicture={recipes} deploy={deploy.recipe} git={git.recipe}/>
+                    <Card contentPicture={netflix} deploy={deploy.netflix} git={git.netflix}/>
                     <Card contentPicture={kxk} deploy={deploy.arch} git={git.arch}/>
                     <Card contentPicture={quiz} deploy={deploy.quiz} git={git.quiz}/>
             </div>
